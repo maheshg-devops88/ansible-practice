@@ -1,0 +1,9 @@
+---
+- name: Variables from the file
+  hosts: web
+  vars_file:
+  - course.yaml
+  tasks:
+  - name: Variables from the file
+    ansible.builtin.debug:
+      msg: "{{ COURSE }} by {{ TRAINER }}"
