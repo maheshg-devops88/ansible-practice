@@ -1,8 +1,16 @@
 ---
-- name: Print Hello World
+- name: PLAY-1
   hosts: local
   connection: local
   tasks:
   - name: Print the HelloWorld
     ansible.builtin.debug:
       msg: "Hello World"
+
+- name: PLAY-2
+  hosts: local
+  connection: local
+  tasks:
+  - name: This is PLAY-2
+    ansible.builtin.debug:
+      msg: "This is PLAY-2"
