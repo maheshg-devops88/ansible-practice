@@ -1,0 +1,10 @@
+---
+- name: Variables at TASK level
+  hosts: web
+  tasks:
+  - name: Variables at TASK level
+    vars:
+      NAME: Mahesh
+      COURSE: DEVOPS
+    ansible.builtin.debug:
+      msg: "{{ NAME }} is learning {{ COURSE }}"
