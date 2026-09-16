@@ -1,7 +1,7 @@
 ---
 - name: Variables from the file
   hosts: web
-  vars_file:
+  var_file:
   - course.yaml
   tasks:
   - name: Variables from the file
