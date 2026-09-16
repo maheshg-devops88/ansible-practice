@@ -1,5 +1,6 @@
 ---
 - name: Variables at Play Level
+  hosts: web
   vars:
     COURSE: DEVOPS
     TRAINER: Shiva
