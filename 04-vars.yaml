@@ -1,0 +1,9 @@
+---
+- name: Variables at Play Level
+  vars:
+    COURSE: DEVOPS
+    TRAINER: Shiva
+  tasks:
+  - name: Variables at Play Level
+    ansible.builtin.debug:
+      msg: "{{ COURSE }} by {{ TRAINER }}"
