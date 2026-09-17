@@ -16,8 +16,8 @@
     LEVEL: play
   tasks:
   - name: VARS which take priority
-    vars:
-      COURSE: DEVOPS
-      LEVEL: task
+   # vars:
+    # COURSE: DEVOPS
+     # LEVEL: task
     ansible.builtin.debug:
       msg: "{{ COURSE }} at {{ LEVEL }}"
