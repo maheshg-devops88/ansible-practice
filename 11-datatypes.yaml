@@ -1,0 +1,24 @@
+---
+- name: Different data types
+  hosts: web
+  vars: 
+   PROGRAM: "AWS with DEVOPS" #string
+   DURATION: 140 #int
+   IS_LIVE: true #boolean 
+   DETAILS: #map/dictionary
+     months: 4
+     TUTOR: Siva 
+   TOPICS: #list 
+     - linux
+     - ansible
+     - terraform
+   tasks:
+    - name: different data types 
+      ansible.builtin.debug:
+        msg: 
+          PROGRAM: "{{ PROGRAM }}"
+          DURATION: "{{ DURATION }}"
+          IS_LIVE: "{{ IS_LIVE }}"
+          DETAILS: "{{ DETAILS }}"
+          TOPICS: "{{ TOPICS }}"
+  
