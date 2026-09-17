@@ -13,11 +13,11 @@
     private: false
   vars:
     COURSE: DEVOPS
-    LEVEL: vars
+    LEVEL: play
   tasks:
   - name: VARS which take priority
     vars:
       COURSE: DEVOPS
-      LEVEL: vars
+      LEVEL: task
     ansible.builtin.debug:
       msg: "{{ COURSE }} at {{ LEVEL }}"
