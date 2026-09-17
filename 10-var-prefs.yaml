@@ -1,0 +1,23 @@
+---
+- name: VARS which one take priority
+  hosts: web
+  vars_files:
+  - course.yaml
+  vars_prompt:
+  - name: COURSE
+    prompt: what is the course
+    private: false
+
+  - name: LEVEL
+    prompt: what is the level
+    private: false
+  vars:
+    COURSE: DEVOPS
+    LEVEL: vars
+  tasks:
+  - name: VARS which take priority
+    vars:
+      COURSE: DEVOPS
+      LEVEL: vars
+    ansible.builtin.debug:
+      msg: "{{ COURSE }} at {{ LEVEL }}"
