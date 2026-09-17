@@ -1,8 +1,8 @@
 ---
 - name: VARS which one take priority
   hosts: web
-  vars_files:
-  - course.yaml
+  # vars_files:
+  # - course.yaml
   vars_prompt:
   - name: COURSE
     prompt: what is the course
