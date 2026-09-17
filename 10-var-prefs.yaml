@@ -11,9 +11,9 @@
   #  - name: LEVEL
   #    prompt: what is the level
   #    private: false
-  vars:
-     COURSE: DEVOPS
-     LEVEL: play
+  # vars:
+  #    COURSE: DEVOPS
+  #    LEVEL: play
   tasks:
   - name: VARS which take priority
     # vars:
