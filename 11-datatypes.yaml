@@ -12,10 +12,10 @@
      - linux
      - ansible
      - terraform
-  tasks:
+   tasks:
     - name: different data types 
       ansible.builtin.debug:
-        msg: 
+        msg: | 
           PROGRAM: "{{ PROGRAM }}"
           DURATION: "{{ DURATION }}"
           IS_LIVE: "{{ IS_LIVE }}"
