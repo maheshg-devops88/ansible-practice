@@ -4,16 +4,16 @@
   tasks:
   - name: checking command module
     ansible.builtin.command: cat /etc/passwd | grep root
-    register: "{{ command_output }}"
+    register: command_output
 
   - name: Print Command output
     ansible.builtin.debug:
-      msg: command_output
+      msg: "{{ command_output }}"
 
   - name: Checking Shell Module
     ansible.builtin.shell: cat /etc/passwd | grep root
-    register: "{{ shell_output }}"
+    register: shell_output
 
   - name: Print Shell output
     ansible.builtin.debug:
-      msg: shell_output
+      msg: "{{ shell_output }}"
