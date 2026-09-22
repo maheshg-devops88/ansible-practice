@@ -2,10 +2,9 @@
 - name: demo on conditions
   hosts: web
   vars:
-     IS_LIVE: false
+    IS_LIVE: true
   tasks:
-     - name: demo on conditions
-       ansible.builtin.debug:
-          msg: "Yes is_live is False"
-       when: IS_LIVE 
-      
+  - name: demo on conditions
+    ansible.builtin.debug:
+      msg: "Yes is_live is False"
+    when: IS_LIVE
