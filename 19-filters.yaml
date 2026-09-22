@@ -5,6 +5,10 @@
   vars:
     topics: linux, shell, ansible, terraform
     Greeting: "Good Evening"
+    tagsMap:
+      Project: Roboshop
+      Course: DEVOPS
+      name: ansible
   tasks:
   - name: Greeting
 
@@ -14,3 +18,7 @@
   - name: Convert string to list
     ansible.builtin.debug:
       msg: "{{ topics | split(',') }}"
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "{{ tagsMap | dict2list }}"
