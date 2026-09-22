@@ -3,9 +3,14 @@
   hosts: local
   connection: local
   vars:
-    # Greeting: "Good Evening"
+    topics: linux, shell, ansible, terraform
+    Greeting: "Good Evening"
   tasks:
   - name: Greeting
 
     ansible.builtin.debug:
       msg: "Hi Mahesh, {{ Greeting | default('Good Morning') }}"
+
+  - name: Convert string to list
+    ansible.builtin.debug:
+      msg: "{{ topics | split(,) }}"
