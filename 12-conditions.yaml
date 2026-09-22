@@ -6,5 +6,5 @@
   tasks:
   - name: demo on conditions
     ansible.builtin.debug:
-      msg: "Yes is_live is False"
+      msg: "Yes is_live is True"
     when: IS_LIVE
