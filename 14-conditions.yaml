@@ -5,3 +5,9 @@
   - name: Gathering Facts
     ansible.builtin.debug:
       msg: "{{ ansible_facts }}"
+
+  - name: Install nginx
+    ansible.builtin.package:
+      name: nginx
+      state: present
+    when: os_family"=="RedHat"
