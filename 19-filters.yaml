@@ -3,9 +3,9 @@
   hosts: local
   connection: local
   vars:
-    Greeting: "Good_Evening"
+    Greeting: "Good Evening"
   tasks:
   - name: Greeting
 
     ansible.builtin.debug:
-      msg: "Hi Mahesh, {{ Greeting | default(Good Morning) }}"
+      msg: "Hi Mahesh, {{ Greeting | default('Good Morning') }}"
