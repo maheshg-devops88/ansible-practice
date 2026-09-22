@@ -1,0 +1,10 @@
+---
+- name: Check Number of Sessions
+  hosts: web
+  vars:
+    NUMBER_OF_SESSIONS: 7
+  tasks:
+  - name: Check Number of SESSIONS
+    ansible.builtin.debug:
+      msg: "Number of Sessions gt 5"
+    when: NUMBER_OF_SESSIONS > 5
