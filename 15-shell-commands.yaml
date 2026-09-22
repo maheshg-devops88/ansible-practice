@@ -3,7 +3,7 @@
   hosts: web
   tasks:
   - name: checking command module
-    ansible.builtin.command: cat /etc/passwd | grep root
+    ansible.builtin.command: cat /etc/passwd
     register: command_output
 
   - name: Print Command output
