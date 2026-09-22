@@ -1,0 +1,11 @@
+---
+- name: demo on conditions
+  hosts: web
+  vars:
+     IS_LIVE: false
+  tasks:
+     - name: demo on conditions
+       ansible.builtin.debug:
+          msg: "Yes is_live is False"
+       when: IS_LIVE 
+      
