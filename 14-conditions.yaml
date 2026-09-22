@@ -10,7 +10,7 @@
   - name: Check if OS is Redhat or not
     ansible.builtin.debug:
       msg: "Yes it is RedHat"
-    when: ansible_facts.os_family == "Redhat"
+    when: ansible_facts.os_family == "RedHat"
 
   - name: Check if OS is Debian or not
     ansible.builtin.debug:
