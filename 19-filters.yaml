@@ -9,6 +9,8 @@
       Project: Roboshop
       Course: DEVOPS
       name: ansible
+    tagsList: [ { "key": "name", "value": "ansible" }, { "key": "Project", "value": "Roboshop" }, { "key": "Course", "value": "DEVOPS" } ]
+
   tasks:
   - name: Greeting
 
@@ -22,3 +24,7 @@
   - name: convert map to list
     ansible.builtin.debug:
       msg: "{{ tagsMap | dict2items }}"
+
+  - name: convert map to list
+    ansible.builtin.debug:
+      msg: "{{ tagsMap | items2dict }}"
