@@ -36,3 +36,7 @@
   - name: convert letter to lower
     ansible.builtin.debug:
       msg: "{{ Greeting | lower }}"
+
+  - name: Get the IP address
+    ansible.builtin.debug:
+      msg: "{{ myIP | ansible.ipv4.address }}"
