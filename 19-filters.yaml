@@ -40,4 +40,5 @@
 
   - name: Get the IP address
     ansible.builtin.debug:
-      msg: "{{ myIP | ansible.utils.ipv4 }}"
+      msg: "Ansible control node ip is : {{ myIP }}"
+    when: ansible.utils.ipv4
