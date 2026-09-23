@@ -42,3 +42,7 @@
     ansible.builtin.debug:
       msg: "Ansible control node ip is : {{ myIP }}"
     when: myIP is ansible.utils.ipv4
+
+  - name: Read the Student yaml file
+    ansible.builtin.set_fact:
+      student_yaml: "{{ lookup('file', 'students.yaml') | from_yaml }}"
