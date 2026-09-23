@@ -39,4 +39,4 @@
 
   - name: Get the IP address
     ansible.builtin.debug:
-      msg: "{{ myIP | ansible.ipv4.address }}"
+      msg: "{{ myIP | ansible_fact.ipv4.address }}"
