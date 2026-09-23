@@ -31,4 +31,4 @@
 
   - name: convert letter to upper
     ansible.builtin.debug:
-      msg: "{{ course | upper }}"
+      msg: "{{ topics | upper }}"
