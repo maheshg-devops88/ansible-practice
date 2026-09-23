@@ -25,6 +25,10 @@
     ansible.builtin.debug:
       msg: "{{ tagsMap | dict2items }}"
 
-  - name: convert map to list
+  - name: convert list to Map
     ansible.builtin.debug:
       msg: "{{ tagsList | items2dict }}"
+
+  - name: convert letter to upper
+    ansible.builtin.debug:
+      msg: "{{ course | upper }}"
