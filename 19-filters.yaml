@@ -4,6 +4,7 @@
   connection: local
   vars:
     topics: linux, shell, ansible, terraform
+    myIP: 172.31.26.190
     Greeting: "Good Evening"
     tagsMap:
       Project: Roboshop
@@ -39,4 +40,4 @@
 
   - name: Get the IP address
     ansible.builtin.debug:
-      msg: "{{ myIP | ansible_fact.ipv4.address }}"
+      msg: "{{ myIP | ansible.utils.ipv4 }}"
