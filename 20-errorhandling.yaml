@@ -1,0 +1,12 @@
+---
+- name: Get userid of Roboshop
+  hosts: local
+  connection: local
+  tasks:
+    - name: get id of Roboshop
+      ansible.builtin.command: id roboshop 
+      register: user_output 
+    
+    - name: user id output 
+      ansible.builtin.debug:
+        msg: "{{ user_output }}"
