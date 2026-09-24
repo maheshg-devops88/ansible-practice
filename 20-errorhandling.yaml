@@ -2,6 +2,7 @@
 - name: Get userid of Roboshop
   hosts: local
   connection: local
+  become: true
   tasks:
     - name: get id of Roboshop
       ansible.builtin.command: id roboshop 
