@@ -6,6 +6,7 @@
     - name: get id of Roboshop
       ansible.builtin.command: id roboshop 
       register: user_output 
+      ignore_errors: true
     
     - name: user id output 
       ansible.builtin.debug:
