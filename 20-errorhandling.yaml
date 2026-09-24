@@ -16,4 +16,4 @@
       ansible.builtin.user:
         name: roboshop 
         create_home: yes 
-      when: user.output.rc != 0
+      when: user_output.rc != 0
