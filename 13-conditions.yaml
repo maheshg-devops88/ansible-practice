@@ -7,4 +7,4 @@
   - name: Check Number of SESSIONS
     ansible.builtin.debug:
       msg: "Number of Sessions gt 5"
-    when: NUMBER_OF_SESSIONS < 5
+    when: NUMBER_OF_SESSIONS > 5
