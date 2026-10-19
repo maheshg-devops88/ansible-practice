@@ -2,7 +2,7 @@
 - name: demo on conditions
   hosts: web
   vars:
-    IS_LIVE: true
+    IS_LIVE: false
   tasks:
   - name: demo on conditions
     ansible.builtin.debug:
