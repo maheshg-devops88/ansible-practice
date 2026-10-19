@@ -4,7 +4,7 @@
   vars: 
    PROGRAM: "AWS with DEVOPS" #string
    DURATION: 140 #int
-   IS_LIVE: true #boolean 
+   IS_LIVE: false #boolean 
    DETAILS: #map/dictionary
      months: 4
      TUTOR: Siva 
